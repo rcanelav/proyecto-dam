@@ -1,0 +1,9 @@
+[submodule "proyecto-backend-dam"]
+	path = proyecto-backend-dam
+	url = https://github.com/rcanelav/proyecto-backend-dam
+[submodule "proyecto-frontend-dam"]
+	path = proyecto-frontend-dam
+	url = https://github.com/rcanelav/proyecto-frontend-dam
+[submodule "proyecto-docs-dam"]
+	path = proyecto-docs-dam
+	url = https://github.com/rcanelav/proyecto-docs-dam
