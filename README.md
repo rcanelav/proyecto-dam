@@ -68,10 +68,10 @@ $ npm install npm@latest -g
 
 *Below you can find a step by step description to run effectively this app*
 
-1. Clone repository
+1. Clone repository (WITH SUBMODULES)
 
 ```sh
-$ git clone git@github.com:rcanelav/proyecto-dam.git
+$ git clone --recursive https://github.com/rcanelav/proyecto-dam
 ```
 
 2. Install environment (It will install the dependencies and also will generate the .env file)
