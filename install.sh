@@ -12,3 +12,7 @@ for d in */ ; do
     fi
     cd ..
 done
+
+clear
+echo "IMPORTANT: remember to fill the backend .env with the required DDBB credentials"
+read -p "Press enter to continue"
