@@ -1,0 +1,15 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: ./proyecto-frontend-dam
+      dockerfile: Dockerfile
+    ports:
+      - "3005:3005"
+  
+  backend:
+    build:
+      context: ./proyecto-backend-dam
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
