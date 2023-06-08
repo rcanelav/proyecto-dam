@@ -54,8 +54,6 @@
 
 *This instructions set will let you be able to have a HUNKY DORY CODE project copy ***(Hereinafter named as "HDC")*** in accordance with MIT License.*
 
-</br>
-
 ### Pre-requisites 📋
 
 *Setup you need to run this app*
@@ -71,7 +69,7 @@ $ npm install npm@latest -g
 1. Clone repository (WITH SUBMODULES)
 
 ```sh
-$ git clone --recursive https://github.com/rcanelav/proyecto-dam
+$ git clone --recursive git@github.com:rcanelav/proyecto-dam.git
 ```
 
 2. Install environment (It will install the dependencies and also will generate the .env file)
@@ -82,12 +80,36 @@ $ ./install.sh
 
 3. Once the environment has been set up, run the script to start the frontend and the backend
 
+3.1 The app can be run using docker-compose, just run the following command:
+
+```sh
+$ docker-compose up
+```
+
+OR
+
+3.2 (OPTIONAL)There is two ways to run the app, the first one is running the script using npm directly with the following recommendations:
+
+* IMPORTANT: depending on your OS, you will need to update the package.json file in the backend folder, since its using unix commands to run the app
+
+Unix:
+
+```sh
+$ export NODE_ENV=&& node app.js
+```
+
+Windows:
+
+```sh
+$ set NODE_ENV=&& node app.js
+```
+And then
+
 ```sh
 $ ./run.sh
 ```
 
 4. ***Other credentials will be needed to run the app, if you want to get them, please contact with the project owner.***
-   
 5. ***(OPTIONAL) Integrate with HDC RESTful API @***
 
 * [Backend repository](https://github.com/rcanelav/proyecto-frontend-dam)
