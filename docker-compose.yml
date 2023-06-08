@@ -13,3 +13,16 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
+
+  database:
+    image: mariadb:10.4
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: hunkydorycode
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./proyecto-docs-dam/DDBB/IMPLEMENTACION/DDBB.sql:/docker-entrypoint-initdb.d/ddbb.sql
+
