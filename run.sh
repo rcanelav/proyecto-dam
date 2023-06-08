@@ -11,4 +11,5 @@ for d in */ ; do
 done
 
 # Run npm start in parallel processes
-printf '%s\n' "${directories[@]}" | xargs -I {} -P 0 bash -c "cd {} && npm start"
+# If the folder is the backend run the docker container
+printf '%s\n' "${directories[@]}" | xargs -I {} -P 0 bash -c "cd {} && ./run.sh"
